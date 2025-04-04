@@ -21,6 +21,7 @@ import {
 import { ChevronDown } from 'lucide-react';
 import { ModeToggle } from '@/components/mode-toggle';
 import poems from '../database/poems';
+import { useSelector } from 'react-redux';
 
 const categories = [
   'प्रेम कविता',
