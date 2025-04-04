@@ -6,7 +6,7 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <PoemPage />
+      <Outlet />
     </ThemeProvider>
   )
 }

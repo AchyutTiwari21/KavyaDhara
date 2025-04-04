@@ -5,7 +5,7 @@ import App from './App.jsx';
 import { Provider } from 'react-redux';
 import store from './store/store.js';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { AuthPage, LandingPage } from './pages/index.js';
+import { AuthPage, LandingPage, PoemPage } from './pages/index.js';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/auth',
         element: <AuthPage />,
+      }, 
+      {
+        path: '/allPoems',
+        element: <PoemPage />,
       }
     ]
   }

@@ -3,13 +3,18 @@ import { Card } from "@/components/ui/card";
 import { PenLine, BookOpen, Heart, Feather } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function LandingPage() {
 
   const navigate = useNavigate();
+  const isLoggedIn = useSelector(state => state.auth.status);
 
   const handleButtonClick = () => {
-    navigate("/auth");
+    if (isLoggedIn) 
+      navigate("/allPoems");
+    else
+      navigate("/auth");
   }
 
   return (
