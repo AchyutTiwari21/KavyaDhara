@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Moon, Sun, Heart, MessageCircle, Share2, Feather, PenSquare, Volume2, X } from 'lucide-react';
 
-function App() {
+function ShlokaPage() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showWriteModal, setShowWriteModal] = useState(false);
   const [showReadModal, setShowReadModal] = useState(false);
   const [showComments, setShowComments] = useState(false);
   const [newComment, setNewComment] = useState('');
-  const [selectedPoem, setSelectedPoem] = useState<Poem | null>(null);
-  const [poems, setPoems] = useState([
+  const [selectedPoem, setSelectedPoem] = useState(null);
+  const [poems, setPoem] = useState([
     {
       title: "न च प्राण संज्ञो",
       content: "न च प्राण संज्ञो न वै पञ्चवायु: न वा सप्तधातुनर् वा पञ्चकोश: न वाक्पािणपादौ न चोपस्थपायू िचदानन्द रूप:िशवोऽहम् िशवोऽहम्",
@@ -374,4 +374,4 @@ function App() {
   );
 }
 
-export default App;
+export default ShlokaPage;
