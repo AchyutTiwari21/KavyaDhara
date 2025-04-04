@@ -44,7 +44,7 @@ function AuthPage() {
 
         if(user) {
           dispatch(authLogin({name, email, password}));
-          navigate("/");
+          navigate("/allPoems");
         } else {
           throw new Error("Invalid email or password.");
         }
@@ -69,7 +69,7 @@ function AuthPage() {
 
         users.push({name, email, password});
         dispatch(authLogin({name, email, password}));
-        navigate("/");
+        navigate("/allPoems");
 
       } catch (error) {
           setError(error.message);
