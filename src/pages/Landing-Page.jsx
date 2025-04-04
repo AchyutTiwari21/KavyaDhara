@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PenLine, BookOpen, Heart, Feather } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function LandingPage() {
@@ -41,10 +41,14 @@ function LandingPage() {
                 लेखन शुरू करें
                 <PenLine className="ml-2 h-5 w-5" />
               </Button>
+
+              <Link to="/shloka">
               <Button size="lg" variant="outline" className="bg-slate-800/40 hover:bg-slate-200 text-white border-slate-600 cursor-pointer">
                 और जानें
                 <BookOpen className="ml-2 h-5 w-5" />
               </Button>
+              </Link>
+              
             </div>
           </div>
         </div>

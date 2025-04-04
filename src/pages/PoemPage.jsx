@@ -23,10 +23,12 @@ function PoemPage() {
                 </button>
               </Link>
               
+              <Link to="/shloka">
               <button className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                 <Book className="w-5 h-5" />
                 और जानें
               </button>
+              </Link>
 
               <ModeToggle />
             </div>
